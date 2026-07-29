@@ -1,6 +1,117 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dental Design Studio | AJAYNXT</title><meta name="description" content="Three dental clinic website concepts in one interactive demo."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
-<header class="demo-bar"><a class="ajay" href="https://ajaynxt.com">AJAY<span>NXT</span></a><div class="design-tabs"><button data-design="0">01 Care</button><button data-design="1">02 Studio</button><button data-design="2">03 Luxe</button></div><div class="top-actions"><button id="pauseBtn">Pause</button><button id="themeBtn" aria-label="Toggle dark and light mode">◐</button></div></header>
-<aside class="customizer" id="customizer"><button class="customizer-toggle" id="customizerToggle">Customize</button><div class="panel"><label>Search Color<input id="colorSearch" placeholder="teal or #14b8a6"></label><input id="colorPicker" type="color" value="#18a999"><button id="lockColor">Lock Color</button><label>Select Font<select id="fontSelect"><option>Manrope</option><option>DM Sans</option><option>Poppins</option><option>Space Grotesk</option><option>Playfair Display</option></select></label><button id="lockFont">Lock Font</button><button id="lockText">Lock Text</button></div></aside>
-<main id="app"></main>
-<nav class="mobile-actions"><a href="tel:+919929562585">Call</a><a href="https://wa.me/919929562585">WhatsApp</a><a href="#appointment">Book</a></nav>
-<script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dental Clinic Website Demo | AJAY NXT</title>
+    <meta
+      name="description"
+      content="Interactive dental clinic website demo by AJAY NXT with three responsive concepts, appointment booking and live design controls."
+    />
+    <meta name="author" content="AJAY NXT" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large"
+    />
+    <link rel="canonical" href="https://dental.ajaynxt.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AJAY NXT" />
+    <meta
+      property="og:title"
+      content="Dental Clinic Website Demo | AJAY NXT"
+    />
+    <meta
+      property="og:description"
+      content="Three responsive dental clinic concepts with appointment booking and live design controls."
+    />
+    <meta property="og:url" content="https://dental.ajaynxt.com/" />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/5355903/pexels-photo-5355903.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Dental Clinic Website Demo | AJAY NXT"
+    />
+    <meta
+      name="twitter:description"
+      content="Interactive dental website demo designed and developed by AJAY NXT."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.pexels.com/photos/5355903/pexels-photo-5355903.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Dental Clinic Website Demo",
+        "url": "https://dental.ajaynxt.com/",
+        "description": "Interactive dental clinic website demo with three responsive concepts and appointment booking.",
+        "creator": {
+          "@type": "Person",
+          "name": "AJAY NXT",
+          "url": "https://ajaynxt.com/",
+          "sameAs": [
+            "https://www.instagram.com/ajay_nxt_/",
+            "https://www.linkedin.com/in/ajaynxt/"
+          ]
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="demo-bar">
+      <a class="ajay" href="https://ajaynxt.com">AJAY<span>NXT</span></a>
+      <div class="design-tabs">
+        <button data-design="0">01 Care</button
+        ><button data-design="1">02 Studio</button
+        ><button data-design="2">03 Luxe</button>
+      </div>
+      <div class="top-actions">
+        <button id="pauseBtn">Pause</button
+        ><button id="themeBtn" aria-label="Toggle dark and light mode">
+          ◐
+        </button>
+      </div>
+    </header>
+    <aside class="customizer" id="customizer">
+      <button class="customizer-toggle" id="customizerToggle">Customize</button>
+      <div class="panel">
+        <label
+          >Search Color<input
+            id="colorSearch"
+            placeholder="teal or #14b8a6" /></label
+        ><input id="colorPicker" type="color" value="#18a999" /><button
+          id="lockColor"
+        >
+          Lock Color</button
+        ><label
+          >Select Font<select id="fontSelect">
+            <option>Manrope</option>
+            <option>DM Sans</option>
+            <option>Poppins</option>
+            <option>Space Grotesk</option>
+            <option>Playfair Display</option>
+          </select></label
+        ><button id="lockFont">Lock Font</button
+        ><button id="lockText">Lock Text</button>
+      </div>
+    </aside>
+    <main id="app"></main>
+    <nav class="mobile-actions">
+      <a href="tel:+919929562585">Call</a
+      ><a href="https://wa.me/919929562585">WhatsApp</a
+      ><a href="#appointment">Book</a>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>
