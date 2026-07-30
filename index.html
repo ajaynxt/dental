@@ -1,6 +1,225 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dental Design Studio | AJAYNXT</title><meta name="description" content="Three dental clinic website concepts in one interactive demo."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
-<header class="demo-bar"><a class="ajay" href="https://ajaynxt.com">AJAY<span>NXT</span></a><div class="design-tabs"><button data-design="0">01 Care</button><button data-design="1">02 Studio</button><button data-design="2">03 Luxe</button></div><div class="top-actions"><button id="pauseBtn">Pause</button><button id="themeBtn" aria-label="Toggle dark and light mode">◐</button></div></header>
-<aside class="customizer" id="customizer"><button class="customizer-toggle" id="customizerToggle">Customize</button><div class="panel"><label>Search Color<input id="colorSearch" placeholder="teal or #14b8a6"></label><input id="colorPicker" type="color" value="#18a999"><button id="lockColor">Lock Color</button><label>Select Font<select id="fontSelect"><option>Manrope</option><option>DM Sans</option><option>Poppins</option><option>Space Grotesk</option><option>Playfair Display</option></select></label><button id="lockFont">Lock Font</button><button id="lockText">Lock Text</button></div></aside>
-<main id="app"></main>
-<nav class="mobile-actions"><a href="tel:+919929562585">Call</a><a href="https://wa.me/919929562585">WhatsApp</a><a href="#appointment">Book</a></nav>
-<script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Dental Design Studio | Fictional Dental Website Concepts by AJAYNXT</title>
+  <meta name="description" content="Three fictional dental clinic website concepts in one interactive portfolio demo designed and developed by AJAYNXT. Official contact: +91 99295 62585, Instagram @ajay_nxt_.">
+  <meta name="theme-color" content="#0f1720">
+  <meta name="author" content="Ajay Saini">
+  <meta name="creator" content="AJAYNXT">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://dental.ajaynxt.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dental Design Studio | AJAYNXT Demo">
+  <meta property="og:description" content="Three fictional dental clinic website concepts created by AJAYNXT. Not a real dental clinic or appointment service.">
+  <meta property="og:url" content="https://dental.ajaynxt.com/">
+  <meta property="og:site_name" content="AJAYNXT · Dental Design Studio">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ajaynxt.com/#organization",
+        "name": "AJAYNXT",
+        "alternateName": "AJAY NXT",
+        "url": "https://ajaynxt.com/",
+        "telephone": "+91-99295-62585",
+        "email": "ajayx3neha@gmail.com",
+        "sameAs": [
+          "https://www.instagram.com/ajay_nxt_/"
+        ],
+        "founder": {
+          "@id": "https://ajaynxt.com/#ajay-saini"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://ajaynxt.com/#ajay-saini",
+        "name": "Ajay Saini",
+        "url": "https://ajaynxt.com/",
+        "jobTitle": "Website Designer and Developer",
+        "telephone": "+91-99295-62585",
+        "email": "ajayx3neha@gmail.com",
+        "sameAs": [
+          "https://www.instagram.com/ajay_nxt_/"
+        ]
+      },
+      {
+        "@type": "CreativeWork",
+        "@id": "https://dental.ajaynxt.com/#creativework",
+        "name": "Dental Design Studio",
+        "url": "https://dental.ajaynxt.com/",
+        "description": "Three fictional dental clinic website concepts presented as an interactive AJAYNXT portfolio demonstration.",
+        "creator": {
+          "@id": "https://ajaynxt.com/#ajay-saini"
+        },
+        "publisher": {
+          "@id": "https://ajaynxt.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style id="ajaynxt-dental-demo-notice">
+    .ajaynxt-demo-notice{
+      position:fixed;
+      inset:0 0 auto 0;
+      z-index:10000;
+      min-height:34px;
+      padding:8px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      background:rgba(8,16,24,.97);
+      border-bottom:1px solid rgba(24,169,153,.38);
+      color:rgba(255,255,255,.72);
+      font-family:Manrope,Arial,sans-serif;
+      font-size:10px;
+      font-weight:600;
+      letter-spacing:.11em;
+      text-align:center;
+      text-transform:uppercase;
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+    }
+
+    .ajaynxt-demo-notice a{
+      color:#35d1bf;
+      font-weight:900;
+      text-decoration:none;
+      letter-spacing:.14em;
+    }
+
+    .ajaynxt-demo-notice a:hover{
+      color:#ffffff;
+    }
+
+    .ajaynxt-demo-notice i{
+      width:3px;
+      height:3px;
+      flex:0 0 auto;
+      border-radius:50%;
+      background:#35d1bf;
+    }
+
+    .ajaynxt-demo-notice strong{
+      color:rgba(255,255,255,.94);
+      font-size:9px;
+      font-weight:600;
+    }
+
+    body{
+      padding-top:34px;
+    }
+
+    .demo-bar{
+      top:34px !important;
+    }
+
+    @media(max-width:700px){
+      .ajaynxt-demo-notice{
+        min-height:42px;
+        padding:7px 10px;
+        gap:5px;
+        flex-wrap:wrap;
+        line-height:1.35;
+        font-size:8px;
+        letter-spacing:.08em;
+      }
+
+      .ajaynxt-demo-notice strong{
+        width:100%;
+        font-size:7px;
+      }
+
+      .ajaynxt-demo-notice i{
+        display:none;
+      }
+
+      body{
+        padding-top:42px;
+      }
+
+      .demo-bar{
+        top:42px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ajaynxt-demo-notice" role="note" aria-label="Demo website notice">
+    <span>This is a demo website concept by</span>
+    <a href="https://ajaynxt.com/" target="_blank" rel="noopener">AJAYNXT</a>
+    <i aria-hidden="true"></i>
+    <strong>Not a real dental clinic, doctor or appointment website</strong>
+  </div>
+
+  <header class="demo-bar">
+    <a class="ajay" href="https://ajaynxt.com" aria-label="Visit AJAYNXT">
+      AJAY<span>NXT</span>
+    </a>
+
+    <div class="design-tabs" aria-label="Dental website concepts">
+      <button data-design="0">01 Care</button>
+      <button data-design="1">02 Studio</button>
+      <button data-design="2">03 Luxe</button>
+    </div>
+
+    <div class="top-actions">
+      <button id="pauseBtn">Pause</button>
+      <button id="themeBtn" aria-label="Toggle dark and light mode">◐</button>
+    </div>
+  </header>
+
+  <aside class="customizer" id="customizer">
+    <button class="customizer-toggle" id="customizerToggle">Customize</button>
+
+    <div class="panel">
+      <label>
+        Search Color
+        <input id="colorSearch" placeholder="teal or #14b8a6">
+      </label>
+
+      <input id="colorPicker" type="color" value="#18a999">
+      <button id="lockColor">Lock Color</button>
+
+      <label>
+        Select Font
+        <select id="fontSelect">
+          <option>Manrope</option>
+          <option>DM Sans</option>
+          <option>Poppins</option>
+          <option>Space Grotesk</option>
+          <option>Playfair Display</option>
+        </select>
+      </label>
+
+      <button id="lockFont">Lock Font</button>
+      <button id="lockText">Lock Text</button>
+    </div>
+  </aside>
+
+  <main id="app"></main>
+
+  <nav class="mobile-actions" aria-label="Official AJAYNXT contact actions">
+    <a href="tel:+919929562585">Call</a>
+    <a href="https://wa.me/919929562585" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#appointment">Book</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
